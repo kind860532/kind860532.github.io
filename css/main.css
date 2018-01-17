@@ -644,14 +644,14 @@ pre .keyword,
 pre .javascript .function {
   color: #b294bb;
 }
-.full-image.full-image.full-image {
+.full-image.full-image.full-image.full-image {
   border: none;
   max-width: 100%;
   width: auto;
-  margin: 20px auto;
+  margin: 20px auto 25px;
 }
 @media (min-width: 992px) {
-  .full-image.full-image.full-image {
+  .full-image.full-image.full-image.full-image {
     max-width: none;
     width: 118%;
     margin: 0 -9%;
@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #abe4b8;
+  background: #378ff9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1917,6 +1917,7 @@ pre .javascript .function {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: justify;
   white-space: nowrap;
   line-height: 1.8;
 }
@@ -2870,7 +2871,6 @@ pre .javascript .function {
   position: absolute;
 }
 .site-overview {
-  margin: 0 2px;
   text-align: left;
 }
 .site-author:before,
