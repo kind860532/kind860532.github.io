@@ -88,7 +88,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/Java学习（一）-One.png">
 <meta property="og:image" content="http://yoursite.com/images/Java学习（一）-Two.png">
-<meta property="og:updated_time" content="2018-02-23T08:18:59.074Z">
+<meta property="og:updated_time" content="2018-02-23T09:41:19.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习（一）">
 <meta name="twitter:description" content="小知识点 软件 |-定义：一系列按照特定顺序组织的计算机数据和指令的集合。 |-举例：系统软件，如：DOS，Windows，macOS，Linux等。 ​               应用软件，如：Steam，QQ，WeGame等。">
@@ -358,7 +358,9 @@
 <p>​    |-cd（change directory）：进入指定目录。</p>
 <p>​    |-cd..：退回到当前目录的上一级目录。</p>
 <p>​    |-cd\：退回到当前目录的根目录。</p>
-<p>​    |-注：并不是所有命令在所有系统平台都适用，如dir命令在macOS平台无法使用</p>
+<p>​    |-cls（clear screen）：清屏。</p>
+<p>​    |-注：并不是所有命令在所有系统平台都适用，如dir命令在macOS平台无法使用。</p>
+<p>|-如果当双击.exe文件时，没有出现图形界面，那么该文件的交互方式就是命令行形式的。</p>
 </li>
 </ul>
 <h1 id="Java知识点"><a href="#Java知识点" class="headerlink" title="Java知识点"></a>Java知识点</h1><h2 id="Java语言的三种技术架构"><a href="#Java语言的三种技术架构" class="headerlink" title="Java语言的三种技术架构"></a>Java语言的三种技术架构</h2><ul>
@@ -391,7 +393,22 @@
 <p>​    |-</p>
 </li>
 </ul>
-<h2 id="Java安装"><a href="#Java安装" class="headerlink" title="Java安装"></a>Java安装</h2><h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Java安装"><a href="#Java安装" class="headerlink" title="Java安装"></a>Java安装</h2><ul>
+<li><p>Java的安装包也是按照系统平台的不同，分为多个版本：Windows版本，macOS版本，Linux版本等。</p>
+</li>
+<li><p>Java的安装包分为JRE和JDK两种</p>
+<p>|-JRE（Java Runtime Environment）-Java运行环境</p>
+<p>​    |-包括Java虚拟机（JVM）和Java程序所需的核心类库等，如果想要运行一个开发好的Java程序，只需安装JRE即可。</p>
+<p>|-JDK（Java Development Kit）-Java开发工具包</p>
+<p>​    |-是提供给Java开发人员使用的，其中包含了Java的开发工具，也包括了JRE，所以安装JDK后，无需再单独安装JRE了。Java的开发工具，如：编译工具（javac.exe），打包工具（jar.exe）等。</p>
+</li>
+<li><p>JDK中为什么包含JRE？</p>
+<p>|-开发完成后的Java成需要运行测试一下，查看运行效果。</p>
+<p>|-JDK中的Java开发工具也是由Java语言编写的应用程序（为了便于使用，将这些程序打包成了.exe文件），JRE负责运行Java程序。如果没有JRE，这些开发工具无法运行使用。</p>
+<p>|-简而言之，使用JDK开发完成的Java程序，交由JRE去运行。</p>
+</li>
+</ul>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -551,7 +568,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小知识点"><span class="nav-number">1.</span> <span class="nav-text">小知识点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java知识点"><span class="nav-number">2.</span> <span class="nav-text">Java知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的三种技术架构"><span class="nav-number">2.1.</span> <span class="nav-text">Java语言的三种技术架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的特点：跨平台性"><span class="nav-number">2.2.</span> <span class="nav-text">Java语言的特点：跨平台性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java安装"><span class="nav-number">2.3.</span> <span class="nav-text">Java安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">3.</span> <span class="nav-text">Hello World</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小知识点"><span class="nav-number">1.</span> <span class="nav-text">小知识点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java知识点"><span class="nav-number">2.</span> <span class="nav-text">Java知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的三种技术架构"><span class="nav-number">2.1.</span> <span class="nav-text">Java语言的三种技术架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的特点：跨平台性"><span class="nav-number">2.2.</span> <span class="nav-text">Java语言的特点：跨平台性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java安装"><span class="nav-number">2.3.</span> <span class="nav-text">Java安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置环境变量"><span class="nav-number">2.4.</span> <span class="nav-text">配置环境变量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">3.</span> <span class="nav-text">Hello World</span></a></li></ol></div>
             
 
           </div>
