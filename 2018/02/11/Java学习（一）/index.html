@@ -87,7 +87,8 @@
 <meta property="og:description" content="小知识点 软件 |-定义：一系列按照特定顺序组织的计算机数据和指令的集合。 |-举例：系统软件，如：DOS，Windows，macOS，Linux等。 ​               应用软件，如：Steam，QQ，WeGame等。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/Java学习（一）-One.png">
-<meta property="og:updated_time" content="2018-02-23T02:59:21.956Z">
+<meta property="og:image" content="http://yoursite.com/images/Java学习（一）-Two.png">
+<meta property="og:updated_time" content="2018-02-23T08:18:59.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习（一）">
 <meta name="twitter:description" content="小知识点 软件 |-定义：一系列按照特定顺序组织的计算机数据和指令的集合。 |-举例：系统软件，如：DOS，Windows，macOS，Linux等。 ​               应用软件，如：Steam，QQ，WeGame等。">
@@ -347,19 +348,51 @@
 <p>|-问题一：据了解，现在（2018年）Java语言多应用于web开发，什么是web开发？</p>
 <p>​    |-</p>
 <p>|-问题二：web开发与传统的软件开发有什么区别？</p>
-<p>​    |-</p>
+<p>​    |- web可简单想象成云端软件，所有程序和数据均通过网络获取，并在网页上交互，无需在本地电脑上安装任何东西</p>
 </li>
 <li><p>人机交互</p>
 <p>|-图形化界面（ Graphical User Interface - 简称GUI）</p>
 <p>   命令行界面（Command Line Interface - 简称CLI）：在控制台输入特定指令，由计算机完成一些操作。</p>
-<p>|- 常用命令举例（注：并不是所有命令在所有系统平台都适用，如dir命令在macOS平台无法使用）</p>
+<p>|- 常用命令举例</p>
 <p>​    |- dir（directory [daɪ’rektəri] 目录）：列出当前目录下的文件以及文件夹。</p>
 <p>​    |-cd（change directory）：进入指定目录。</p>
 <p>​    |-cd..：退回到当前目录的上一级目录。</p>
 <p>​    |-cd\：退回到当前目录的根目录。</p>
+<p>​    |-注：并不是所有命令在所有系统平台都适用，如dir命令在macOS平台无法使用</p>
 </li>
 </ul>
-<h1 id="Java知识点"><a href="#Java知识点" class="headerlink" title="Java知识点"></a>Java知识点</h1><h2 id="Java语言的三种技术架构"><a href="#Java语言的三种技术架构" class="headerlink" title="Java语言的三种技术架构"></a>Java语言的三种技术架构</h2>
+<h1 id="Java知识点"><a href="#Java知识点" class="headerlink" title="Java知识点"></a>Java知识点</h1><h2 id="Java语言的三种技术架构"><a href="#Java语言的三种技术架构" class="headerlink" title="Java语言的三种技术架构"></a>Java语言的三种技术架构</h2><ul>
+<li><p>JavaSE（Java 2 Platform Standard Edition - 旧称J2SE）-标准版</p>
+<p>|-是为开发普通桌面和商务应用程序提供的解决方案，该版本的技术是Java其他两版本的基础，可以完成一些桌面应用程序的开发。</p>
+</li>
+<li><p>JavaEE（Java 2 Platform Enterprise Edition - 旧称J2EE）-企业版</p>
+<p>|-是为开发企业环境下的应用程序提供的解决方案，该技术体系中包含的技术，主要针对于web应用程序开发。</p>
+</li>
+<li><p>JavaME（Java 2 Platform Micro Edition - 旧称J2ME）-小型版</p>
+<p>|-是为开发电子消费产品和嵌入式设备提供的解决方案，该技术体系主要应用于小型电子消费类产品，如：手机中的应用程序等。</p>
+<p>|-注：JavaME不再使用的是因为现在智能手机的系统软件Android和iOS的应用程序开发，均有对应的编程语言。Android虽用到Java语言，但无需专门使用JavaME版本去应对整个开发过程，所以JavaME也就不再被使用。</p>
+</li>
+</ul>
+<h2 id="Java语言的特点：跨平台性"><a href="#Java语言的特点：跨平台性" class="headerlink" title="Java语言的特点：跨平台性"></a>Java语言的特点：跨平台性</h2><ul>
+<li><p>跨平台性</p>
+<p>|-定义：通过Java语言编写的应用程序在不同的系统平台上都可以运行。</p>
+<p>|-原理：在不同的系统平台上安装不同系统平台的Java虚拟机（Java Virtual Machine - 简称JVM），由JVM负责Java程序在系统平台上的运行，实现跨平台性。</p>
+<p>|-JVM：用于解释并执行Java程序的一个应用软件。</p>
+</li>
+</ul>
+<p><img src="/../../images/Java学习（一）-Two.png"></p>
+<ul>
+<li><p>问题</p>
+<p>|-问题一：Java语言的跨平台性依赖于JVM虚拟机，那么其他语言也提供类似的虚拟机是不是也就实现了跨平台的特性？那么为什么Java要强调其跨平台的特性呢？</p>
+<p>​    |-</p>
+<p>|-问题二：真正的跨平台性应该是无需任何辅助即可在不同平台上一样运行，那么有了虚拟机还是跨平台吗？</p>
+<p>​    |-</p>
+<p>|-问题三：同样的机器代码，在不同的CPU和系统平台上执行是不一样的？</p>
+<p>​    |-</p>
+</li>
+</ul>
+<h2 id="Java安装"><a href="#Java安装" class="headerlink" title="Java安装"></a>Java安装</h2><h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -518,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小知识点"><span class="nav-number">1.</span> <span class="nav-text">小知识点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java知识点"><span class="nav-number">2.</span> <span class="nav-text">Java知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的三种技术架构"><span class="nav-number">2.1.</span> <span class="nav-text">Java语言的三种技术架构</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小知识点"><span class="nav-number">1.</span> <span class="nav-text">小知识点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java知识点"><span class="nav-number">2.</span> <span class="nav-text">Java知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的三种技术架构"><span class="nav-number">2.1.</span> <span class="nav-text">Java语言的三种技术架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java语言的特点：跨平台性"><span class="nav-number">2.2.</span> <span class="nav-text">Java语言的特点：跨平台性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java安装"><span class="nav-number">2.3.</span> <span class="nav-text">Java安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-World"><span class="nav-number">3.</span> <span class="nav-text">Hello World</span></a></li></ol></div>
             
 
           </div>
