@@ -1,2 +1,1 @@
-# kind860532.github.io
-ii's Personal Blog
+# ii's Personal Blog
